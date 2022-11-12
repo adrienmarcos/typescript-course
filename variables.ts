@@ -14,3 +14,5 @@ const account: {
   name: 'Luis',
   balance: 10
 };
+
+let accounts: {}[];
