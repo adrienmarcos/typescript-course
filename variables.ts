@@ -1,1 +1,2 @@
-const myName: string = '';
+let myName: string | null = '';
+myName = '5';
