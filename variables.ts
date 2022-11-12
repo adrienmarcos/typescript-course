@@ -5,14 +5,24 @@ myName = '5';
 // Arrays
 const items: (string | number)[] = ['test', 10];
 
-// Objects
-const account: {
+// Interfaces
+interface IAccount {
   name: string,
   balance: number,
   status?: boolean
-} = {
+
+  deposit?: (value: number) => void
+};
+
+// Objects
+const firstAccount: IAccount = {
   name: 'Luis',
   balance: 10
 };
 
-let accounts: {}[];
+const secondAccount: IAccount = {
+  name: 'Paul',
+  balance: 20
+};
+
+let accounts: IAccount[] = [firstAccount, secondAccount];
