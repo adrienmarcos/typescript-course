@@ -26,3 +26,18 @@ const secondAccount: IAccount = {
 };
 
 let accounts: IAccount[] = [firstAccount, secondAccount];
+
+// Classes
+class InvestmentAccount implements IAccount {
+  public name: string;
+  public balance: number;
+
+  constructor(name: string, balance: number) {
+    this.name = name;
+    this.balance = balance;
+  }
+
+  private withdraw() {
+
+  }
+}
